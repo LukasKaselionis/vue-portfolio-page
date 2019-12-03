@@ -8,7 +8,7 @@
                 <li class="navigation-link">About</li>
             </a>
             <a href="#">
-                <li class="navigation-link">Portfolio</li>
+                <li class="navigation-link">Projects</li>
             </a>
             <a href="#">
                 <li class="navigation-link">Contact</li>
@@ -26,7 +26,7 @@
 
 <style>
     .navigation {
-        padding: 5px 30px 30px 30px;
+        padding: 5px 30px 5px 30px;
         width: 100%;
     }
 
@@ -41,7 +41,7 @@
         position: relative;
         text-decoration: none;
         list-style: none;
-        margin: 0 15px 0 15px;
+        margin: 0 25px 0 25px;
     }
 
     .navigation-link:before {
