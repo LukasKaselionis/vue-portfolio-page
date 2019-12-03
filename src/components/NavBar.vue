@@ -44,6 +44,10 @@
         margin: 0 25px 0 25px;
     }
 
+    .navigation-link:hover {
+        color: darkslategrey;
+    }
+
     .navigation-link:before {
         content: "";
         position: absolute;
