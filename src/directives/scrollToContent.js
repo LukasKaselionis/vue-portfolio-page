@@ -15,7 +15,7 @@ function noShowScroll() {
         this.style.opacity = 0;
         this.style.pointerEvents = 'none';
     } else {
-        this.style.opacity = 1;
+        this.style.opacity = 0.6;
         this.style.pointerEvents = 'auto';
     }
 }
