@@ -7,7 +7,7 @@
             <a href="#about">
                 <span class="navigation-link">About</span>
             </a>
-            <a href="#projects">
+            <a href="#project">
                 <span class="navigation-link">Projects</span>
             </a>
             <a href="#contact">

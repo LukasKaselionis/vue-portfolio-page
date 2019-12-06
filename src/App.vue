@@ -3,7 +3,7 @@
         <NavBar/>
         <Home id="/"/>
         <About id="about"/>
-        <Projects id="projects"/>
+        <Projects id="project"/>
         <Contact id="contact"/>
         <Footer/>
     </div>
