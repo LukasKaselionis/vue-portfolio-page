@@ -1,24 +1,23 @@
 <template>
     <div class="navigation">
         <ul class="navigation-menu">
-            <a href="#">
-                <li class="navigation-link">Home</li>
+            <a href="/">
+                <span class="navigation-link">Home</span>
             </a>
-            <a href="#">
-                <li class="navigation-link">About</li>
+            <a href="#about">
+                <span class="navigation-link">About</span>
             </a>
-            <a href="#">
-                <li class="navigation-link">Projects</li>
+            <a href="#projects">
+                <span class="navigation-link">Projects</span>
             </a>
-            <a href="#">
-                <li class="navigation-link">Contact</li>
+            <a href="#contact">
+                <span class="navigation-link">Contact</span>
             </a>
         </ul>
     </div>
 </template>
 
 <script>
-
     export default {
         name: "NavBar"
     }
@@ -26,7 +25,8 @@
 
 <style>
     .navigation {
-        padding: 5px 30px 5px 30px;
+        position: absolute;
+        padding: 15px 30px 15px 30px;
         width: 100%;
     }
 

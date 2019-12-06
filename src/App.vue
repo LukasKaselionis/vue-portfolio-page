@@ -1,38 +1,42 @@
 <template>
-  <div id="app">
-    <Home/>
-    <About/>
-    <Projects/>
-    <Contact/>
-    <Footer/>
-  </div>
+    <div id="app">
+        <NavBar/>
+        <Home id="/"/>
+        <About id="about"/>
+        <Projects id="projects"/>
+        <Contact id="contact"/>
+        <Footer/>
+    </div>
 </template>
 
 <script>
-import Home from "./components/Home";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+    import NavBar from "./components/NavBar";
+    import Home from "./views/Home";
+    import About from "./views/About";
+    import Projects from "./views/Projects";
+    import Contact from "./views/Contact";
+    import Footer from "./views/Footer";
 
-export default {
-  name: 'app',
-  components: {
-    Home,
-    About,
-    Projects,
-    Contact,
-    Footer
-  }
-}
+    export default {
+        name: 'app',
+        components: {
+            NavBar,
+            Home,
+            About,
+            Projects,
+            Contact,
+            Footer
+        }
+    }
 </script>
 
 <style>
-  * {
-    box-sizing: border-box;
-  }
+    * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
 
-  body {
-    margin: auto;
-  }
+    body {
+        margin: auto;
+    }
 </style>
