@@ -1,5 +1,5 @@
 <template>
-    <div class="navigation">
+    <div class="navigation" v-scroll-nav-bar-to-down>
         <ul class="navigation-menu">
             <a href="/">
                 <span class="navigation-link">Home</span>
@@ -18,8 +18,11 @@
 </template>
 
 <script>
+    import scrollNavBarToDown from "../directives/scrollNavBarToDown";
+
     export default {
-        name: "NavBar"
+        name: "NavBar",
+        directives: { scrollNavBarToDown }
     }
 </script>
 
@@ -28,6 +31,12 @@
         position: absolute;
         padding: 15px 30px 15px 30px;
         width: 100%;
+    }
+
+    .navigation.hidden {
+        position: fixed;
+        background-color: #212121;
+        z-index: 1;
     }
 
     .navigation-menu {
@@ -45,7 +54,7 @@
     }
 
     .navigation-link:hover {
-        color: darkslategrey;
+        color: cadetblue;
     }
 
     .navigation-link:before {
