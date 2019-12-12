@@ -1,13 +1,13 @@
 <template>
     <div class="navigation" v-scroll-nav-bar-to-down>
         <ul class="navigation-menu">
-            <a href="/">
+            <a href="#home">
                 <span class="navigation-link">Home</span>
             </a>
             <a href="#about">
                 <span class="navigation-link">About</span>
             </a>
-            <a href="#project">
+            <a href="#projects">
                 <span class="navigation-link">Projects</span>
             </a>
             <a href="#contact">
@@ -22,13 +22,14 @@
 
     export default {
         name: "NavBar",
-        directives: { scrollNavBarToDown }
+        directives: {scrollNavBarToDown},
     }
 </script>
 
 <style>
     .navigation {
-        position: absolute;
+        position: fixed;
+        top: 0;
         padding: 15px 30px 15px 30px;
         width: 100%;
     }

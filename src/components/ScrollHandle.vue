@@ -28,6 +28,15 @@
         justify-content: center;
         color: black;
         cursor: pointer;
+        opacity: 0;
         z-index: 1;
+    }
+
+    .fa-chevron-circle-up {
+        opacity: 1;
+    }
+
+    .fa-chevron-circle-up:hover {
+        opacity: 0.7;
     }
 </style>

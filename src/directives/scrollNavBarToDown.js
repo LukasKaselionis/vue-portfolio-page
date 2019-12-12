@@ -15,7 +15,7 @@ function showOnScroll() {
         this.style.opacity = 1;
         this.classList.remove('hidden')
     } else {
-        this.style.opacity = 0.7;
+        this.style.opacity = 1;
         this.classList.add('hidden');
     }
 }
