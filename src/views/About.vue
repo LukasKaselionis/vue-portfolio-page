@@ -17,6 +17,10 @@
 </script>
 
 <style>
+    #about {
+        margin-top: -45px;
+        padding-top: 45px;
+    }
     .aboutTitle {
         padding-bottom: 12px;
         font-weight: bold;

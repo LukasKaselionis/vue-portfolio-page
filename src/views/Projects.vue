@@ -17,6 +17,9 @@
 </script>
 
 <style scoped>
+    #projects {
+        padding-top: 50px;
+    }
     .projectTitle {
         padding-bottom: 12px;
         font-weight: bold;

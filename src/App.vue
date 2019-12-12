@@ -2,11 +2,10 @@
     <div id="app">
         <NavBar/>
         <ScrollHandle/>
-        <ScrollHandleContent/>
-        <Home id="/"/>
-        <About id="about"/>
-        <Projects id="project"/>
-        <Contact id="contact"/>
+        <Home/>
+        <About/>
+        <Projects/>
+        <Contact/>
         <Footer/>
     </div>
 </template>
@@ -15,7 +14,6 @@
     import NavBar from "./components/NavBar";
     import ScrollHandle from "./components/ScrollHandle";
     import ScrollToTop from "./directives/scrollToTop";
-    import ScrollHandleContent from "./components/ScrollHandleContent";
     import Home from "./views/Home";
     import About from "./views/About";
     import Projects from "./views/Projects";
@@ -27,7 +25,6 @@
         components: {
             NavBar,
             ScrollHandle,
-            ScrollHandleContent,
             Home,
             About,
             Projects,
@@ -36,7 +33,6 @@
         },
         directives: {
             "scroll-to-top": ScrollToTop,
-            "scroll-to-content": ScrollHandleContent
         }
     }
 </script>

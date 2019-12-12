@@ -19,6 +19,9 @@
 </script>
 
 <style scoped>
+    #contact {
+        padding-top: 50px;
+    }
     .contactTitle {
         padding-bottom: 12px;
         font-weight: bold;
