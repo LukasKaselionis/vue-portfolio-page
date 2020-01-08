@@ -28,11 +28,12 @@
         font-size: 56px;
         font-style: italic;
         text-align: center;
+        color: cadetblue;
     }
 
     .title-line {
         border: 0;
         height: 1px;
-            background-image: linear-gradient(to right, #f0f0f0, #0060ba, #008dff, #f0f0f0)
+            background-image: linear-gradient(to right, #f0f0f0, #00ba8d, #008c6a, #f0f0f0)
     }
 </style>

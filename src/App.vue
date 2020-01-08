@@ -4,7 +4,6 @@
         <ScrollHandle/>
         <Home/>
         <About/>
-        <Projects/>
         <Contact/>
         <Footer/>
     </div>
@@ -16,7 +15,6 @@
     import ScrollToTop from "./directives/scrollToTop";
     import Home from "./views/Home";
     import About from "./views/About";
-    import Projects from "./views/Projects";
     import Contact from "./views/Contact";
     import Footer from "./views/Footer";
 
@@ -27,7 +25,6 @@
             ScrollHandle,
             Home,
             About,
-            Projects,
             Contact,
             Footer
         },
@@ -45,6 +42,7 @@
 
     body {
         margin: auto;
+        font-family: Arial, sans-serif;
     }
 
     #app {

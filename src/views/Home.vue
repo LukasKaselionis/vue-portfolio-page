@@ -1,9 +1,7 @@
 <template>
     <div id="home" class="cover">
-        <div class="hero">
-            <div class="container greeting">
-                <h2>Hello, I'm Lukas</h2>
-            </div>
+        <div class="overlay">
+            <h2 class="greeting">Hello, I'm Lukas</h2>
         </div>
     </div>
 </template>
@@ -22,22 +20,18 @@
         background-image: url("../assets/web-portrait.jpg");
     }
 
-    .hero {
+    .overlay {
         background-color: rgba(0, 0, 0, 0.9);
         height: 100vh;
-    }
-
-    .container {
-        height: 100vh;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center
     }
 
     .greeting {
         font-size: 75px;
         color: white;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center
     }
 
 </style>
