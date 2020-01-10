@@ -38,6 +38,7 @@
     }
 
     .navigation-menu {
+        height: inherit;
         text-align: center;
     }
 
