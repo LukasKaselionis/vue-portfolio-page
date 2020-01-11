@@ -2,6 +2,7 @@
   "name": "porftolio-page",
   "version": "0.1.0",
   "private": true,
+  "main": "server.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -11,7 +12,6 @@
   "dependencies": {
     "core-js": "^3.4.3",
     "express": "^4.17.1",
-    "server-static": "^2.0.5",
     "vue": "^2.6.10",
     "vuetify": "^2.1.0"
   },
