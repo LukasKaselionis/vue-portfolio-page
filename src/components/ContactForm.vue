@@ -1,20 +1,21 @@
 <template>
     <div class="container">
         <v-form
-                ref="form"
                 class="contactForm"
+                method="post"
+                ref="form"
+                enctype="text/plain"
         >
             <v-text-field
-                    class=""
-                    v-model="name"
+                        v-model="name"
                     label="Name"
+                    :rules="nameRules"
                     solo-inverted
                     required
                     rounded
             ></v-text-field>
 
             <v-text-field
-                    class=""
                     v-model="email"
                     label="E-mail"
                     solo-inverted
@@ -30,33 +31,32 @@
                     required
             ></v-textarea>
 
-            <v-btn rounded color="black" dark>Send your message</v-btn>
+            <v-btn rounded color="black" dark @click="submit">Send your message</v-btn>
 
         </v-form>
     </div>
 </template>
 
 <script>
+    /*eslint no-console: ["error", { allow: ["log", "warn", "error"] }] */
     export default {
-        data: () => ({
-            name: '',
-            nameRules: [
-                v => !!v || 'Name is required',
-                v => (v && v.length <= 10) || 'Name must be less than 10 characters',
-            ],
-            email: '',
-            emailRules: [
-                v => !!v || 'E-mail is required',
-                v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
-            ],
-            message: '',
-            messageRules: [
-                v => !!v || 'Message is required',
-                v => (v && v.length <= 25) || 'Message must be less than 25 characters',
-            ],
-        }),
-
-        methods: {},
+        data() {
+            return {
+                name: '',
+                email: '',
+                message: '',
+                nameRules: [
+                    v => v.length >= 3 || 'Minimum length is 3 characters'
+                ],
+            }
+        },
+        methods: {
+            submit() {
+                if (this.$refs.form.validate()) {
+                    console.log(this.name,this.email, this.message);
+                }
+            }
+        },
     }
 </script>
 
