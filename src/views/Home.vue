@@ -1,7 +1,7 @@
 <template>
-    <div id="home" class="cover">
-        <div class="overlay">
-            <h2 class="greeting">Hello, I'm Lukas</h2>
+    <div id="home">
+        <div class="main">
+            <h2 class="main-text">Hello, I'm Lukas</h2>
         </div>
     </div>
 </template>
@@ -16,22 +16,26 @@
 
 <style>
 
-    .cover {
+    #home {
         background-image: url("../assets/web-portrait.jpg");
+        background-size: cover;
+        background-position: bottom;
+        transition: 0.4s;
     }
 
-    .overlay {
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 100vh;
+    .main {
+        min-height: 100vh;
         text-align: center;
         display: flex;
         align-items: center;
-        justify-content: center
+        justify-content: center;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 1));
     }
 
-    .greeting {
+    .main-text {
         font-size: 75px;
-        color: white;
+        color: rgba(255, 255, 255, 0.65);
+        text-shadow: 3px 3px rgba(0, 0, 0, 0.50);
     }
 
 </style>
