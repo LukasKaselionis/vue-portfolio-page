@@ -43,9 +43,10 @@
     body {
         margin: auto;
         font-family: Arial, sans-serif;
+        line-height: 1.5;
     }
 
     #app {
-        background-color: #f0f0f0;
+        background-color: #ffffff;
     }
 </style>

@@ -5,7 +5,7 @@
                 <span class="navigation-link">Home</span>
             </a>
             <a href="#about">
-                <span class="navigation-link">About</span>
+                <span class="navigation-link">About me</span>
             </a>
             <a href="#contact">
                 <span class="navigation-link">Contact</span>
@@ -33,7 +33,7 @@
 
     .navigation.hidden {
         position: fixed;
-        background-color: #212121;
+        background: lightslategrey;
         z-index: 1;
     }
 

@@ -9,7 +9,6 @@
             <v-text-field
                         v-model="name"
                     label="Name"
-                    :rules="nameRules"
                     solo-inverted
                     required
                     rounded
@@ -45,9 +44,6 @@
                 name: '',
                 email: '',
                 message: '',
-                nameRules: [
-                    v => v.length >= 3 || 'Minimum length is 3 characters'
-                ],
             }
         },
         methods: {
@@ -63,6 +59,5 @@
 <style scoped>
     .contactForm {
         padding: 35px 35px 0 35px;
-        opacity: 0.7;
     }
 </style>
